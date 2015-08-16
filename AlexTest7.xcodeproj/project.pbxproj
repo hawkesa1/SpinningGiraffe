@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA3D4F051B81117500F5A857 /* Ding - Sound Effect1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA3D4F041B81117500F5A857 /* Ding - Sound Effect1.mp3 */; };
+		FA4F7C981B7F95F100D4E8F3 /* vectorjungleanimals.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA4F7C971B7F95F100D4E8F3 /* vectorjungleanimals.jpg */; };
+		FA4F7C9A1B7F9AC400D4E8F3 /* image3.png in Resources */ = {isa = PBXBuildFile; fileRef = FA4F7C991B7F9AC400D4E8F3 /* image3.png */; };
+		FACA111B1B7FA33100F2E1A3 /* jungle_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FACA111A1B7FA33100F2E1A3 /* jungle_bg@2x.png */; };
+		FACB88A61B7F1B0800315DF9 /* Foreground.m in Sources */ = {isa = PBXBuildFile; fileRef = FACB88A51B7F1B0800315DF9 /* Foreground.m */; };
+		FACB88AA1B7F49D500315DF9 /* AlexButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FACB88A91B7F49D500315DF9 /* AlexButton.m */; };
+		FACB88AC1B7F5F0800315DF9 /* Globals.m in Sources */ = {isa = PBXBuildFile; fileRef = FACB88AB1B7F5F0800315DF9 /* Globals.m */; };
 		FACBA37F1B7E3D70009618E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FACBA37E1B7E3D70009618E6 /* main.m */; };
 		FACBA3821B7E3D70009618E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FACBA3811B7E3D70009618E6 /* AppDelegate.m */; };
 		FACBA3851B7E3D70009618E6 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = FACBA3841B7E3D70009618E6 /* GameScene.m */; };
@@ -16,6 +23,7 @@
 		FACBA38F1B7E3D70009618E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACBA38E1B7E3D70009618E6 /* Images.xcassets */; };
 		FACBA3921B7E3D70009618E6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACBA3901B7E3D70009618E6 /* LaunchScreen.xib */; };
 		FACBA39E1B7E3D71009618E6 /* AlexTest7Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FACBA39D1B7E3D71009618E6 /* AlexTest7Tests.m */; };
+		FACBA3A81B7E40D0009618E6 /* giraffe.png in Resources */ = {isa = PBXBuildFile; fileRef = FACBA3A71B7E40D0009618E6 /* giraffe.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +37,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA3D4F041B81117500F5A857 /* Ding - Sound Effect1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ding - Sound Effect1.mp3"; sourceTree = "<group>"; };
+		FA4F7C971B7F95F100D4E8F3 /* vectorjungleanimals.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = vectorjungleanimals.jpg; path = ../../vectorjungleanimals.jpg; sourceTree = "<group>"; };
+		FA4F7C991B7F9AC400D4E8F3 /* image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = image3.png; path = ../../image3.png; sourceTree = "<group>"; };
+		FACA111A1B7FA33100F2E1A3 /* jungle_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "jungle_bg@2x.png"; path = "../../jungle_bg@2x.png"; sourceTree = "<group>"; };
+		FACB88A51B7F1B0800315DF9 /* Foreground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Foreground.m; sourceTree = "<group>"; };
+		FACB88A71B7F1B4700315DF9 /* Foreground.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Foreground.h; sourceTree = "<group>"; };
+		FACB88A81B7F49CB00315DF9 /* AlexButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AlexButton.h; path = ../../BouncingBalls/BouncingBalls/AlexButton.h; sourceTree = "<group>"; };
+		FACB88A91B7F49D500315DF9 /* AlexButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlexButton.m; path = ../../BouncingBalls/BouncingBalls/AlexButton.m; sourceTree = "<group>"; };
+		FACB88AB1B7F5F0800315DF9 /* Globals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Globals.m; sourceTree = "<group>"; };
+		FACB88AD1B7F5F1A00315DF9 /* Globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
 		FACBA3791B7E3D70009618E6 /* AlexTest7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlexTest7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACBA37D1B7E3D70009618E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FACBA37E1B7E3D70009618E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -45,6 +63,7 @@
 		FACBA3971B7E3D71009618E6 /* AlexTest7Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlexTest7Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACBA39C1B7E3D71009618E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FACBA39D1B7E3D71009618E6 /* AlexTest7Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlexTest7Tests.m; sourceTree = "<group>"; };
+		FACBA3A71B7E40D0009618E6 /* giraffe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = giraffe.png; path = "../../../Downloads/ioscreator-master/FollowPathSpriteKitTutorial/FollowPathSpriteKitTutorial/giraffe.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +84,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FAC83D0C1B7E8C9A001046E1 /* GameScene */ = {
+			isa = PBXGroup;
+			children = (
+				FA3D4F041B81117500F5A857 /* Ding - Sound Effect1.mp3 */,
+				FACA111A1B7FA33100F2E1A3 /* jungle_bg@2x.png */,
+				FA4F7C991B7F9AC400D4E8F3 /* image3.png */,
+				FA4F7C971B7F95F100D4E8F3 /* vectorjungleanimals.jpg */,
+				FACBA3831B7E3D70009618E6 /* GameScene.h */,
+				FACBA3841B7E3D70009618E6 /* GameScene.m */,
+				FACBA3861B7E3D70009618E6 /* GameScene.sks */,
+			);
+			name = GameScene;
+			sourceTree = "<group>";
+		};
+		FAC83D0D1B7E8D2E001046E1 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				FACBA3A71B7E40D0009618E6 /* giraffe.png */,
+				FACBA3801B7E3D70009618E6 /* AppDelegate.h */,
+				FACBA3811B7E3D70009618E6 /* AppDelegate.m */,
+				FACBA38B1B7E3D70009618E6 /* Main.storyboard */,
+				FACBA38E1B7E3D70009618E6 /* Images.xcassets */,
+				FACBA3901B7E3D70009618E6 /* LaunchScreen.xib */,
+				FACBA37C1B7E3D70009618E6 /* Supporting Files */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		FACB88A41B7F1A7D00315DF9 /* Foreground */ = {
+			isa = PBXGroup;
+			children = (
+				FACB88A91B7F49D500315DF9 /* AlexButton.m */,
+				FACB88A81B7F49CB00315DF9 /* AlexButton.h */,
+				FACB88A51B7F1B0800315DF9 /* Foreground.m */,
+				FACB88A71B7F1B4700315DF9 /* Foreground.h */,
+				FACB88AB1B7F5F0800315DF9 /* Globals.m */,
+				FACB88AD1B7F5F1A00315DF9 /* Globals.h */,
+			);
+			name = Foreground;
+			sourceTree = "<group>";
+		};
 		FACBA3701B7E3D70009618E6 = {
 			isa = PBXGroup;
 			children = (
@@ -86,17 +146,10 @@
 		FACBA37B1B7E3D70009618E6 /* AlexTest7 */ = {
 			isa = PBXGroup;
 			children = (
-				FACBA3801B7E3D70009618E6 /* AppDelegate.h */,
-				FACBA3811B7E3D70009618E6 /* AppDelegate.m */,
-				FACBA3831B7E3D70009618E6 /* GameScene.h */,
-				FACBA3841B7E3D70009618E6 /* GameScene.m */,
-				FACBA3861B7E3D70009618E6 /* GameScene.sks */,
-				FACBA3881B7E3D70009618E6 /* GameViewController.h */,
-				FACBA3891B7E3D70009618E6 /* GameViewController.m */,
-				FACBA38B1B7E3D70009618E6 /* Main.storyboard */,
-				FACBA38E1B7E3D70009618E6 /* Images.xcassets */,
-				FACBA3901B7E3D70009618E6 /* LaunchScreen.xib */,
-				FACBA37C1B7E3D70009618E6 /* Supporting Files */,
+				FACB88A41B7F1A7D00315DF9 /* Foreground */,
+				FAC83D0D1B7E8D2E001046E1 /* Other */,
+				FAC83D0C1B7E8C9A001046E1 /* GameScene */,
+				FACBF3411B7E9D3200B9E9FD /* ViewController */,
 			);
 			path = AlexTest7;
 			sourceTree = "<group>";
@@ -125,6 +178,15 @@
 				FACBA39C1B7E3D71009618E6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FACBF3411B7E9D3200B9E9FD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FACBA3881B7E3D70009618E6 /* GameViewController.h */,
+				FACBA3891B7E3D70009618E6 /* GameViewController.m */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,9 +269,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FACBA3A81B7E40D0009618E6 /* giraffe.png in Resources */,
 				FACBA3921B7E3D70009618E6 /* LaunchScreen.xib in Resources */,
 				FACBA38F1B7E3D70009618E6 /* Images.xcassets in Resources */,
+				FA4F7C981B7F95F100D4E8F3 /* vectorjungleanimals.jpg in Resources */,
 				FACBA3871B7E3D70009618E6 /* GameScene.sks in Resources */,
+				FA3D4F051B81117500F5A857 /* Ding - Sound Effect1.mp3 in Resources */,
+				FACA111B1B7FA33100F2E1A3 /* jungle_bg@2x.png in Resources */,
+				FA4F7C9A1B7F9AC400D4E8F3 /* image3.png in Resources */,
 				FACBA38D1B7E3D70009618E6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,10 +295,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FACB88AC1B7F5F0800315DF9 /* Globals.m in Sources */,
 				FACBA38A1B7E3D70009618E6 /* GameViewController.m in Sources */,
+				FACB88A61B7F1B0800315DF9 /* Foreground.m in Sources */,
 				FACBA3821B7E3D70009618E6 /* AppDelegate.m in Sources */,
 				FACBA3851B7E3D70009618E6 /* GameScene.m in Sources */,
 				FACBA37F1B7E3D70009618E6 /* main.m in Sources */,
+				FACB88AA1B7F49D500315DF9 /* AlexButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +496,7 @@
 				FACBA3A31B7E3D71009618E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FACBA3A41B7E3D71009618E6 /* Build configuration list for PBXNativeTarget "AlexTest7Tests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +505,7 @@
 				FACBA3A61B7E3D71009618E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
