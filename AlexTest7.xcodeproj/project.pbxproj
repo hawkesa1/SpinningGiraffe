@@ -25,6 +25,8 @@
 		FACBA3921B7E3D70009618E6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACBA3901B7E3D70009618E6 /* LaunchScreen.xib */; };
 		FACBA39E1B7E3D71009618E6 /* AlexTest7Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FACBA39D1B7E3D71009618E6 /* AlexTest7Tests.m */; };
 		FAD5AA1C1B87209D0089B5AD /* jungle_bg1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAD5AA1B1B87209D0089B5AD /* jungle_bg1@2x.png */; };
+		FAD5AA1E1B876C0B0089B5AD /* jungle_bg2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAD5AA1D1B876C0B0089B5AD /* jungle_bg2@2x.png */; };
+		FAD5AA201B8771440089B5AD /* jungle_bg3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAD5AA1F1B8771440089B5AD /* jungle_bg3@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		FACBA39C1B7E3D71009618E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FACBA39D1B7E3D71009618E6 /* AlexTest7Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlexTest7Tests.m; sourceTree = "<group>"; };
 		FAD5AA1B1B87209D0089B5AD /* jungle_bg1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jungle_bg1@2x.png"; sourceTree = "<group>"; };
+		FAD5AA1D1B876C0B0089B5AD /* jungle_bg2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jungle_bg2@2x.png"; sourceTree = "<group>"; };
+		FAD5AA1F1B8771440089B5AD /* jungle_bg3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jungle_bg3@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 		FAC83D0C1B7E8C9A001046E1 /* GameScene */ = {
 			isa = PBXGroup;
 			children = (
+				FAD5AA1F1B8771440089B5AD /* jungle_bg3@2x.png */,
+				FAD5AA1D1B876C0B0089B5AD /* jungle_bg2@2x.png */,
 				FAD5AA1B1B87209D0089B5AD /* jungle_bg1@2x.png */,
 				FA3D4F0B1B81143C00F5A857 /* jungle_bg@2x.png */,
 				FA3D4F041B81117500F5A857 /* Ding - Sound Effect1.mp3 */,
@@ -272,8 +278,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD5AA1E1B876C0B0089B5AD /* jungle_bg2@2x.png in Resources */,
 				FACBA3921B7E3D70009618E6 /* LaunchScreen.xib in Resources */,
 				FACBA38F1B7E3D70009618E6 /* Images.xcassets in Resources */,
+				FAD5AA201B8771440089B5AD /* jungle_bg3@2x.png in Resources */,
 				FA3D4F0A1B8113E500F5A857 /* giraffe.png in Resources */,
 				FA4F7C981B7F95F100D4E8F3 /* vectorjungleanimals.jpg in Resources */,
 				FACBA3871B7E3D70009618E6 /* GameScene.sks in Resources */,
