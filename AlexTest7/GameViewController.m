@@ -8,6 +8,7 @@
 
 #import "GameViewController.h"
 #import "GameScene.h"
+#import "Foreground.h"
 
 @implementation SKScene (Unarchive)
 
@@ -22,7 +23,6 @@
     [arch setClass:self forClassName:@"SKScene"];
     SKScene *scene = [arch decodeObjectForKey:NSKeyedArchiveRootObjectKey];
     [arch finishDecoding];
-    
     return scene;
 }
 
@@ -33,20 +33,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    float foregroundWidth=self.view.frame.size.width;
+    float foregroundHeight=200;
+    Foreground *foreground = [[Foreground alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2- foregroundWidth/2, self.view.frame.size.height-foregroundHeight, foregroundWidth, foregroundHeight)];
+    [self.view addSubview:foreground];
 
-    // Configure the view.
+    
+    NSLog(@"Frame Height %f",self.view.frame.size.height);
+    NSLog(@"Frame Height %f",self.view.frame.size.width);
+    
+    
+    
+    
     SKView * skView = (SKView *)self.view;
     skView.showsFPS = YES;
     skView.showsNodeCount = YES;
-    /* Sprite Kit applies additional optimizations to improve rendering performance */
-    skView.ignoresSiblingOrder = YES;
-    
-    // Create and configure the scene.
-    GameScene *scene = [GameScene unarchiveFromFile:@"GameScene"];
+    SKScene * scene = [GameScene sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
-    
-    // Present the scene.
     [skView presentScene:scene];
+    
 }
 
 - (BOOL)shouldAutorotate
