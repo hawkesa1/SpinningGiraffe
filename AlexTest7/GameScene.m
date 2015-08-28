@@ -12,9 +12,14 @@
 @interface GameScene ()
 @property (nonatomic) SKSpriteNode *giraffe;
 
+
 @end
 
 @implementation GameScene
+
+
+
+
 
 UILabel *speedField;
 UILabel *spinField;
@@ -28,17 +33,24 @@ UILabel *spinField;
     speedField.text = [NSString stringWithFormat:@"%s","0"];
     speedField.font=[UIFont fontWithName:@"MarkerFelt-Thin" size:20];
     speedField.textAlignment=NSTextAlignmentCenter;
-    [self.view addSubview:speedField];
+   // [self.view addSubview:speedField];
     
-    spinField =[[UILabel alloc] initWithFrame:CGRectMake(0, 200, self.frame.size.width, 30)];
-    spinField.text = [NSString stringWithFormat:@"%s","0"];
-    spinField.font=[UIFont fontWithName:@"MarkerFelt-Thin" size:20];
+    
+    spinField =[[UILabel alloc] initWithFrame:CGRectMake(0, 105, self.frame.size.width, 100)];
+    spinField.text = [NSString stringWithFormat:@"%05d",levelCount];
+    spinField.font=[UIFont fontWithName:@"MarkerFelt-Thin" size:35];
     spinField.textAlignment=NSTextAlignmentCenter;
+    spinField.textColor=[UIColor redColor];
+    spinField.textColor =[UIColor colorWithRed:25.0/255.0 green:86.0/255.0 blue:23.0/255.0 alpha:0.9];
+    NSLog(@"Yes it comes");
     [self.view addSubview:spinField];
-
-   
+    
+    
     
 }
+
+
+
 
 
 float alexMaxSpeed=100;
@@ -46,23 +58,19 @@ float alexSpeed=0;
 float alexDecrement=5;
 
 -(id)initWithSize:(CGSize)size {
+    NSLog(@"oh Yes it comes");
+    
     if (self = [super initWithSize:size]) {
-        
-        SKSpriteNode *background=[SKSpriteNode spriteNodeWithImageNamed:@"jungle_bg3"];
+        SKSpriteNode *background=[SKSpriteNode spriteNodeWithImageNamed:@"jungle_bg4"];
         background.position=CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame));
         [self addChild:background];
-        
         
         self.giraffe = [SKSpriteNode spriteNodeWithImageNamed:@"giraffe"];
         self.giraffe.position = CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
         [self addChild:self.giraffe];
         float radius=(self.frame.size.width/2)-(self.giraffe.size.width);
-        // circle path
-        //hello
-       // UIBezierPath *circle = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(self.frame.size.width/2, self.frame.size.height/2, radius*2, radius*2) cornerRadius:radius ];
         
-        UIBezierPath *circle = [UIBezierPath bezierPathWithArcCenter:CGPointMake(self.frame.size.width/2,(self.frame.size.height-radius)-self.giraffe.size.width-70) radius:radius startAngle:0 endAngle:(2*M_PI) clockwise:YES];
-        
+        UIBezierPath *circle = [UIBezierPath bezierPathWithArcCenter:CGPointMake(self.frame.size.width/2,(self.frame.size.height-radius)-self.giraffe.size.width+30) radius:radius startAngle:0 endAngle:(2*M_PI) clockwise:YES];
         
         SKAction *followCircle = [SKAction followPath:circle.CGPath asOffset:NO orientToPath:YES speed:2];
         [self.giraffe  runAction:[SKAction repeatAction:followCircle count:10000] withKey:@"followCircle"];
@@ -79,8 +87,10 @@ float spinDifference=0;
 
 
 int spinCount=0;
-int spinReferencePoint=60;
+int spinReferencePoint=640;
 bool alreadyIncremented=false;
+int level=1;
+int levelCount=1;
 
 -(void)update:(CFTimeInterval)currentTime {
     spinDifference=gSpinSpeed-previousSpinSpeed;
@@ -104,22 +114,43 @@ bool alreadyIncremented=false;
         }
     }
     
-    NSLog(@"%f",self.giraffe.position.x);
-   
+    
     //Check if the giraffe has dropped below a certian point in iorder to count spins
-    if(!alreadyIncremented && self.giraffe.position.x<spinReferencePoint )
+    NSLog(@"%f",self.giraffe.position.y);
+    if(!alreadyIncremented && self.giraffe.position.y>spinReferencePoint )
     {
         spinCount++;
+        levelCount--;
+        if(levelCount<0)
+        {
+            level++;
+            levelCount=level;
+        }
+        
         alreadyIncremented=true;
-        spinField.text = [NSString stringWithFormat:@"%05d",spinCount];
+        spinField.text = [NSString stringWithFormat:@"%05d",levelCount];
+                spinField.transform = CGAffineTransformMakeScale(1.2, 1.2);
+        [UIView beginAnimations:nil context:nil/*contextPoint*/];
+        spinField.transform = CGAffineTransformMakeScale(1.0, 1.0);
+        [UIView setAnimationDelegate:self];
+        [UIView setAnimationDelay:0];
+        [UIView setAnimationDuration:0.2];
+        [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+      
+        
+        [UIView commitAnimations];
+        
+        
+        
+        
         [self runAction:[SKAction playSoundFileNamed:@"Ding - Sound Effect1.mp3" waitForCompletion:NO]];
     }
+    if(self.giraffe.position.y<spinReferencePoint)
+    {
+        alreadyIncremented=false;
+    }
     
-   
-    if(self.giraffe.position.x>spinReferencePoint)
-   {
-       alreadyIncremented=false;
-   }
+    
     
     
     [self changeActionSpeedTo:alexSpeed onNode:self.giraffe];

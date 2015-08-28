@@ -34,7 +34,7 @@
 {
     [super viewDidLoad];
     float foregroundWidth=self.view.frame.size.width;
-    float foregroundHeight=200;
+    float foregroundHeight=150;
     Foreground *foreground = [[Foreground alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2- foregroundWidth/2, self.view.frame.size.height-foregroundHeight, foregroundWidth, foregroundHeight)];
     [self.view addSubview:foreground];
 
