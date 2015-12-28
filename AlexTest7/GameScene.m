@@ -125,25 +125,32 @@ int levelCount=1;
         {
             level++;
             levelCount=level;
+            [self runAction:[SKAction playSoundFileNamed:@"Tada Sound Effect.mp3" waitForCompletion:NO]];
+             spinField.transform = CGAffineTransformMakeScale(1.8, 1.8);
+            [UIView setAnimationDuration:0.5];
+        }
+        else
+        {
+            [self runAction:[SKAction playSoundFileNamed:@"Ding - Sound Effect1.mp3" waitForCompletion:NO]];
+             spinField.transform = CGAffineTransformMakeScale(1.2, 1.2);
+            [UIView setAnimationDuration:0.2];
         }
         
         alreadyIncremented=true;
         spinField.text = [NSString stringWithFormat:@"%05d",levelCount];
-                spinField.transform = CGAffineTransformMakeScale(1.2, 1.2);
+        
+        
+        
         [UIView beginAnimations:nil context:nil/*contextPoint*/];
         spinField.transform = CGAffineTransformMakeScale(1.0, 1.0);
         [UIView setAnimationDelegate:self];
         [UIView setAnimationDelay:0];
-        [UIView setAnimationDuration:0.2];
-        [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
-      
         
+        [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
         [UIView commitAnimations];
         
         
         
-        
-        [self runAction:[SKAction playSoundFileNamed:@"Ding - Sound Effect1.mp3" waitForCompletion:NO]];
     }
     if(self.giraffe.position.y<spinReferencePoint)
     {

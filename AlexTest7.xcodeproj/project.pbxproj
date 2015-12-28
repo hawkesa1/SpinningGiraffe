@@ -11,9 +11,9 @@
 		FA3D4F071B81137A00F5A857 /* AlexButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3D4F061B81137A00F5A857 /* AlexButton.m */; };
 		FA3D4F0A1B8113E500F5A857 /* giraffe.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3D4F091B8113E500F5A857 /* giraffe.png */; };
 		FA3D4F0C1B81143C00F5A857 /* jungle_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3D4F0B1B81143C00F5A857 /* jungle_bg@2x.png */; };
-		FA4F7C981B7F95F100D4E8F3 /* vectorjungleanimals.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA4F7C971B7F95F100D4E8F3 /* vectorjungleanimals.jpg */; };
-		FA4F7C9A1B7F9AC400D4E8F3 /* image3.png in Resources */ = {isa = PBXBuildFile; fileRef = FA4F7C991B7F9AC400D4E8F3 /* image3.png */; };
-		FA6EF2E81B90A82D009013D2 /* jungle_bg4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA6EF2E71B90A82D009013D2 /* jungle_bg4@2x.png */; };
+		FA6EF2E81B90A82D009013D2 /* jungle_bg4@2x-old.png in Resources */ = {isa = PBXBuildFile; fileRef = FA6EF2E71B90A82D009013D2 /* jungle_bg4@2x-old.png */; };
+		FA72E1511C31889700EBAE6B /* Tada Sound Effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA72E1501C31889700EBAE6B /* Tada Sound Effect.mp3 */; };
+		FA72E1531C318FBA00EBAE6B /* jungle_bg4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA72E1521C318FBA00EBAE6B /* jungle_bg4@2x.png */; };
 		FACB88A61B7F1B0800315DF9 /* Foreground.m in Sources */ = {isa = PBXBuildFile; fileRef = FACB88A51B7F1B0800315DF9 /* Foreground.m */; };
 		FACB88AC1B7F5F0800315DF9 /* Globals.m in Sources */ = {isa = PBXBuildFile; fileRef = FACB88AB1B7F5F0800315DF9 /* Globals.m */; };
 		FACBA37F1B7E3D70009618E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FACBA37E1B7E3D70009618E6 /* main.m */; };
@@ -46,9 +46,9 @@
 		FA3D4F081B8113A600F5A857 /* AlexButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlexButton.h; sourceTree = "<group>"; };
 		FA3D4F091B8113E500F5A857 /* giraffe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = giraffe.png; sourceTree = "<group>"; };
 		FA3D4F0B1B81143C00F5A857 /* jungle_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jungle_bg@2x.png"; sourceTree = "<group>"; };
-		FA4F7C971B7F95F100D4E8F3 /* vectorjungleanimals.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = vectorjungleanimals.jpg; path = ../../vectorjungleanimals.jpg; sourceTree = "<group>"; };
-		FA4F7C991B7F9AC400D4E8F3 /* image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = image3.png; path = ../../image3.png; sourceTree = "<group>"; };
-		FA6EF2E71B90A82D009013D2 /* jungle_bg4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jungle_bg4@2x.png"; sourceTree = "<group>"; };
+		FA6EF2E71B90A82D009013D2 /* jungle_bg4@2x-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jungle_bg4@2x-old.png"; sourceTree = "<group>"; };
+		FA72E1501C31889700EBAE6B /* Tada Sound Effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tada Sound Effect.mp3"; sourceTree = "<group>"; };
+		FA72E1521C318FBA00EBAE6B /* jungle_bg4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jungle_bg4@2x.png"; sourceTree = "<group>"; };
 		FACB88A51B7F1B0800315DF9 /* Foreground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Foreground.m; sourceTree = "<group>"; };
 		FACB88A71B7F1B4700315DF9 /* Foreground.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Foreground.h; sourceTree = "<group>"; };
 		FACB88AB1B7F5F0800315DF9 /* Globals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Globals.m; sourceTree = "<group>"; };
@@ -95,14 +95,14 @@
 		FAC83D0C1B7E8C9A001046E1 /* GameScene */ = {
 			isa = PBXGroup;
 			children = (
-				FA6EF2E71B90A82D009013D2 /* jungle_bg4@2x.png */,
+				FA72E1501C31889700EBAE6B /* Tada Sound Effect.mp3 */,
+				FA6EF2E71B90A82D009013D2 /* jungle_bg4@2x-old.png */,
+				FA72E1521C318FBA00EBAE6B /* jungle_bg4@2x.png */,
 				FAD5AA1F1B8771440089B5AD /* jungle_bg3@2x.png */,
 				FAD5AA1D1B876C0B0089B5AD /* jungle_bg2@2x.png */,
 				FAD5AA1B1B87209D0089B5AD /* jungle_bg1@2x.png */,
 				FA3D4F0B1B81143C00F5A857 /* jungle_bg@2x.png */,
 				FA3D4F041B81117500F5A857 /* Ding - Sound Effect1.mp3 */,
-				FA4F7C991B7F9AC400D4E8F3 /* image3.png */,
-				FA4F7C971B7F95F100D4E8F3 /* vectorjungleanimals.jpg */,
 				FACBA3831B7E3D70009618E6 /* GameScene.h */,
 				FACBA3841B7E3D70009618E6 /* GameScene.m */,
 				FACBA3861B7E3D70009618E6 /* GameScene.sks */,
@@ -250,6 +250,7 @@
 				TargetAttributes = {
 					FACBA3781B7E3D70009618E6 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = BY29GNNGTR;
 					};
 					FACBA3961B7E3D71009618E6 = {
 						CreatedOnToolsVersion = 6.4;
@@ -282,18 +283,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD5AA1E1B876C0B0089B5AD /* jungle_bg2@2x.png in Resources */,
-				FA6EF2E81B90A82D009013D2 /* jungle_bg4@2x.png in Resources */,
+				FA72E1531C318FBA00EBAE6B /* jungle_bg4@2x.png in Resources */,
+				FA6EF2E81B90A82D009013D2 /* jungle_bg4@2x-old.png in Resources */,
 				FACBA3921B7E3D70009618E6 /* LaunchScreen.xib in Resources */,
 				FACBA38F1B7E3D70009618E6 /* Images.xcassets in Resources */,
 				FAD5AA201B8771440089B5AD /* jungle_bg3@2x.png in Resources */,
 				FA3D4F0A1B8113E500F5A857 /* giraffe.png in Resources */,
-				FA4F7C981B7F95F100D4E8F3 /* vectorjungleanimals.jpg in Resources */,
 				FACBA3871B7E3D70009618E6 /* GameScene.sks in Resources */,
 				FA3D4F051B81117500F5A857 /* Ding - Sound Effect1.mp3 in Resources */,
 				FA3D4F0C1B81143C00F5A857 /* jungle_bg@2x.png in Resources */,
 				FAD5AA1C1B87209D0089B5AD /* jungle_bg1@2x.png in Resources */,
-				FA4F7C9A1B7F9AC400D4E8F3 /* image3.png in Resources */,
 				FACBA38D1B7E3D70009618E6 /* Main.storyboard in Resources */,
+				FA72E1511C31889700EBAE6B /* Tada Sound Effect.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,9 +444,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AlexTest7/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -453,9 +457,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AlexTest7/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
